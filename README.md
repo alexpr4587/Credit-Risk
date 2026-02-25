@@ -6,12 +6,21 @@ A comprehensive Credit Risk solution: From mathematical modeling (PD, LGD, EAD, 
 ![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED)
 ![AWS](https://img.shields.io/badge/AWS-LocalStack_Simulation-orange)
 
-![Dashboard Preview](./assets/1.png)
-![Dashboard Preview](./assets/2.png)
-![Dashboard Preview](./assets/3.png)
-![Dashboard Preview](./assets/4.png)
-![Dashboard Preview](./assets/5.png)
-![Dashboard Preview](./assets/6.png)
+## 📊 Dashboard Preview
+
+<details>
+<summary>Click to view screenshots</summary>
+
+<p align="center">
+  <img src="./assets/1.png" width="800"/>
+  <img src="./assets/2.png" width="800"/>
+  <img src="./assets/3.png" width="800"/>
+  <img src="./assets/4.png" width="800"/>
+  <img src="./assets/5.png" width="800"/>
+  <img src="./assets/6.png" width="800"/>
+</p>
+
+</details>
 
 ## Overview
 
