@@ -6,7 +6,7 @@ A comprehensive Credit Risk solution: From mathematical modeling (PD, LGD, EAD, 
 ![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED)
 ![AWS](https://img.shields.io/badge/AWS-LocalStack_Simulation-orange)
 
-![Dashboard Preview](assets/dashboard_preview.png)
+![Dashboard Preview](assets/Anotación 2026-02-25 192351.png)
 *(Screenshot of the Streamlit Frontend in action)*
 
 ## Overview
