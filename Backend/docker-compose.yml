@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: credit-risk-api
+    ports:
+      - "8100:8100"  # Puerto 8100 en lugar de 8000
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - AWS_ENDPOINT_URL=http://host.docker.internal:4566
+      - AWS_ACCESS_KEY_ID=test
+      - AWS_SECRET_ACCESS_KEY=test
+      - AWS_DEFAULT_REGION=us-east-1
+      - S3_BUCKET=credit-risk-models
+    volumes:
+      - ./data:/app/data
+    command: uvicorn main:app --host 0.0.0.0 --port 8100
+
+  frontend:
+    build: .
+    container_name: credit-risk-frontend
+    ports:
+      - "8601:8601"  # Puerto 8601 en lugar de 8501
+    depends_on:
+      - api
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - API_URL=http://host.docker.internal:8100
+    command: streamlit run frontend.py --server.port=8601 --server.address=0.0.0.0
