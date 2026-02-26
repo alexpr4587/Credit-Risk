@@ -80,7 +80,7 @@ This is the centrepiece of the project. I answered the hardest question: *would 
 ## 💻 **Research Structure**
 
 ```
-Credit-Risk/                # Research & Development
+Research/                # Research & Development
 ├── PD.ipynb                # Scorecard development
 ├── LGD.ipynb               # Loss modeling
 ├── EAD.ipynb               # Exposure modeling
